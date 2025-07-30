@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行日記 - 探索世界的每一天</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>旅行日記</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">首頁</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link">目的地</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">關於我</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">旅遊日記</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">聯絡</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>探索世界的每一天</h1>
+                <p>分享旅行的美好時光，記錄世界的精彩瞬間</p>
+                <button class="hero-btn" onclick="scrollToContent()">開始閱讀</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要內容區 -->
+    <main class="main-content" id="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 最新文章 -->
+                <section class="latest-posts">
+                    <h2>最新文章</h2>
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="images/japan-kyoto.jpg" alt="京都櫻花季">
+                            </div>
+                            <div class="post-content">
+                                <h3>京都櫻花季：最美的粉色春天</h3>
+                                <div class="post-meta">
+                                    <span class="date"><i class="far fa-calendar"></i> 2024年4月15日</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    京都的櫻花季是一年中最美的時刻，漫步在哲學之道，欣賞滿樹的櫻花飄落，體驗日本獨有的浪漫春色...
+                                </p>
+                                <div class="post-tags">
+                                    <span class="tag">日本</span>
+                                    <span class="tag">櫻花</span>
+                                    <span class="tag">文化</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="images/paris-family.jpg" alt="巴黎親子遊">
+                            </div>
+                            <div class="post-content">
+                                <h3>巴黎親子遊：與孩子共度的浪漫時光</h3>
+                                <div class="post-meta">
+                                    <span class="date"><i class="far fa-calendar"></i> 2024年3月28日</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    帶著孩子遊巴黎並不是一件困難的事，從艾菲爾鐵塔到盧浮宮，每個角落都充滿了驚喜和學習的機會...
+                                </p>
+                                <div class="post-tags">
+                                    <span class="tag">歐洲</span>
+                                    <span class="tag">親子</span>
+                                    <span class="tag">文化</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="images/tokyo-food.jpg" alt="東京美食">
+                            </div>
+                            <div class="post-content">
+                                <h3>東京美食之旅：從街頭小食到米其林</h3>
+                                <div class="post-meta">
+                                    <span class="date"><i class="far fa-calendar"></i> 2024年3月10日</span>
+                                </div>
+                                <p class="post-excerpt">
+                                    東京的美食文化豐富多元，從築地市場的新鮮海鮮到銀座的精緻料理，每一口都是對味蕾的極致享受...
+                                </p>
+                                <div class="post-tags">
+                                    <span class="tag">日本</span>
+                                    <span class="tag">美食</span>
+                                    <span class="tag">文化</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="view-more">
+                        <button class="btn-secondary" onclick="location.href='blog.html'">查看更多文章</button>
+                    </div>
+                </section>
+
+                <!-- 側邊欄 -->
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3>標籤分類</h3>
+                        <div class="tags-cloud">
+                            <a href="#" class="tag-link">日本 (5)</a>
+                            <a href="#" class="tag-link">歐洲 (3)</a>
+                            <a href="#" class="tag-link">親子 (2)</a>
+                            <a href="#" class="tag-link">美食 (4)</a>
+                            <a href="#" class="tag-link">文化 (6)</a>
+                            <a href="#" class="tag-link">攝影 (3)</a>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3>熱門文章</h3>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <img src="images/popular-1.jpg" alt="熱門文章">
+                                <div class="popular-content">
+                                    <h4>京都櫻花季完整攻略</h4>
+                                    <span class="date">4月15日</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="images/popular-2.jpg" alt="熱門文章">
+                                <div class="popular-content">
+                                    <h4>巴黎親子遊必去景點</h4>
+                                    <span class="date">3月28日</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="images/popular-3.jpg" alt="熱門文章">
+                                <div class="popular-content">
+                                    <h4>東京美食地圖分享</h4>
+                                    <span class="date">3月10日</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 熱門目的地 -->
+    <section class="destinations-section">
+        <div class="container">
+            <h2>熱門目的地</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="images/destination-japan.jpg" alt="日本">
+                    <div class="destination-info">
+                        <h3>日本</h3>
+                        <p>櫻花、美食、文化</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/destination-france.jpg" alt="法國">
+                    <div class="destination-info">
+                        <h3>法國</h3>
+                        <p>浪漫、藝術、美酒</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/destination-italy.jpg" alt="義大利">
+                    <div class="destination-info">
+                        <h3>義大利</h3>
+                        <p>歷史、美食、風景</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-avatar">
+                    <img src="images/avatar.jpg" alt="個人頭像">
+                </div>
+                <div class="about-text">
+                    <h2>關於我</h2>
+                    <p>嗨，我是喜歡旅行的小王！我熱愛探索世界的每一個角落，用相機記錄美好的瞬間，用文字分享旅行的故事。希望我的旅行經驗能夠幫助到同樣熱愛旅行的你！</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>旅行日記</h3>
+                    <p>分享旅行的美好時光</p>
+                </div>
+                <div class="footer-section">
+                    <h3>網站導覽</h3>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="destinations.html">目的地</a></li>
+                        <li><a href="blog.html">旅遊日記</a></li>
+                        <li><a href="about.html">關於我</a></li>
+                        <li><a href="contact.html">聯絡</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>聯絡我們</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 旅行日記. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 - 旅行日記</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>旅行日記</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首頁</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link">目的地</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">關於我</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">旅遊日記</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">聯絡</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 頁面標題 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>聯絡我們</h1>
+            <p>有任何問題或想法，歡迎與我們聯絡</p>
+        </div>
+    </section>
+
+    <!-- 聯絡內容 -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- 聯絡表單 -->
+                <section class="contact-form-section">
+                    <h2>發送訊息</h2>
+                    <p>無論是旅行問題、合作提案或是單純想分享旅行心得，我們都很樂意聽到您的聲音！</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">姓名 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">電子郵件 *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">主旨</label>
+                            <select id="subject" name="subject">
+                                <option value="">選擇主旨</option>
+                                <option value="travel-question">旅行問題諮詢</option>
+                                <option value="collaboration">合作提案</option>
+                                <option value="feedback">網站回饋</option>
+                                <option value="sharing">旅行心得分享</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">訊息內容 *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="請詳細描述您的問題或想法..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                我希望訂閱旅行日記的電子報，獲取最新文章和旅行資訊
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                我同意 <a href="#" class="privacy-link">隱私政策</a> 並了解我的資料將如何被使用
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">發送訊息</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> 發送中...
+                            </span>
+                        </button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </section>
+
+                <!-- 聯絡資訊 -->
+                <aside class="contact-info-section">
+                    <h2>其他聯絡方式</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>電子郵件</h3>
+                                <p>contact@traveljournal.com</p>
+                                <small>我們會在24小時內回覆</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Instagram</h3>
+                                <p>@traveler_xiaowang</p>
+                                <small>追蹤我們的日常旅行分享</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Facebook</h3>
+                                <p>旅行者小王</p>
+                                <small>加入我們的旅行社群</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>YouTube</h3>
+                                <p>小王的旅行頻道</p>
+                                <small>觀看我們的旅行影片</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 回應時間 -->
+                    <div class="response-time">
+                        <h3><i class="fas fa-clock"></i> 回應時間</h3>
+                        <ul>
+                            <li><strong>電子郵件：</strong>24小時內</li>
+                            <li><strong>社群媒體：</strong>即時回覆</li>
+                            <li><strong>合作提案：</strong>3-5個工作天</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 常見問題 -->
+                    <div class="faq-preview">
+                        <h3><i class="fas fa-question-circle"></i> 常見問題</h3>
+                        <ul>
+                            <li><a href="#faq1">如何規劃第一次自助旅行？</a></li>
+                            <li><a href="#faq2">攝影器材推薦建議？</a></li>
+                            <li><a href="#faq3">親子旅行注意事項？</a></li>
+                            <li><a href="#faq4">旅行預算如何規劃？</a></li>
+                        </ul>
+                        <a href="#" class="view-all-faq">查看所有常見問題 →</a>
+                    </div>
+                </aside>
+            </div>
+            
+            <!-- 合作資訊 -->
+            <section class="collaboration-info">
+                <div class="collab-container">
+                    <h2>合作機會</h2>
+                    <p>我們歡迎各種形式的合作，包括但不限於：</p>
+                    
+                    <div class="collab-types">
+                        <div class="collab-type">
+                            <i class="fas fa-camera"></i>
+                            <h3>攝影合作</h3>
+                            <p>旅遊景點、酒店、餐廳的攝影服務</p>
+                        </div>
+                        <div class="collab-type">
+                            <i class="fas fa-edit"></i>
+                            <h3>內容創作</h3>
+                            <p>旅遊文章撰寫、部落格客座文章</p>
+                        </div>
+                        <div class="collab-type">
+                            <i class="fas fa-bullhorn"></i>
+                            <h3>品牌推廣</h3>
+                            <p>旅遊相關產品的體驗與推薦</p>
+                        </div>
+                        <div class="collab-type">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h3>分享講座</h3>
+                            <p>旅行攝影、部落格經營等主題分享</p>
+                        </div>
+                    </div>
+                    
+                    <div class="collab-cta">
+                        <p>如果您有合作意向，請透過上方表單聯絡我們，並在主旨中選擇「合作提案」。</p>
+                        <p>請在訊息中詳細說明合作內容、時間安排和預期效果，我們會儘快回覆您。</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 訂閱電子報 -->
+            <section class="newsletter-section">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h2>訂閱我們的電子報</h2>
+                        <p>獲取最新的旅行文章、攝影技巧和獨家旅行攻略</p>
+                        
+                        <form class="newsletter-form">
+                            <div class="newsletter-input-group">
+                                <input type="email" placeholder="輸入您的電子郵件" required>
+                                <button type="submit">訂閱</button>
+                            </div>
+                            <p class="newsletter-note">
+                                <i class="fas fa-shield-alt"></i>
+                                我們尊重您的隱私，絕不會將您的資料分享給第三方
+                            </p>
+                        </form>
+                        
+                        <div class="newsletter-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-newspaper"></i>
+                                <span>每週旅行資訊</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-gift"></i>
+                                <span>獨家旅行攻略</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>攝影技巧分享</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter-image">
+                        <img src="images/newsletter-travel.jpg" alt="旅行電子報">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>旅行日記</h3>
+                    <p>分享旅行的美好時光</p>
+                </div>
+                <div class="footer-section">
+                    <h3>網站導覽</h3>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="destinations.html">目的地</a></li>
+                        <li><a href="blog.html">旅遊日記</a></li>
+                        <li><a href="about.html">關於我</a></li>
+                        <li><a href="contact.html">聯絡</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>聯絡我們</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 旅行日記. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

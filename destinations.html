@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目的地 - 旅行日記</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>旅行日記</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首頁</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link active">目的地</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">關於我</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">旅遊日記</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">聯絡</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 頁面標題 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>探索世界目的地</h1>
+            <p>發現令人驚嘆的旅遊景點和文化體驗</p>
+        </div>
+    </section>
+
+    <!-- 目的地內容 -->
+    <main class="destinations-content">
+        <div class="container">
+            <!-- 篩選器 -->
+            <div class="filter-section">
+                <h3>依地區篩選</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="asia">亞洲</button>
+                    <button class="filter-btn" data-filter="europe">歐洲</button>
+                    <button class="filter-btn" data-filter="america">美洲</button>
+                    <button class="filter-btn" data-filter="oceania">大洋洲</button>
+                </div>
+            </div>
+
+            <!-- 目的地網格 -->
+            <div class="destinations-grid-detailed">
+                <!-- 日本 -->
+                <div class="destination-item" data-category="asia">
+                    <div class="destination-image">
+                        <img src="images/japan-detail.jpg" alt="日本">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>日本</h3>
+                                <p>櫻花盛開的浪漫國度</p>
+                                <div class="destination-stats">
+                                    <span><i class="fas fa-file-alt"></i> 5 篇文章</span>
+                                    <span><i class="fas fa-camera"></i> 120 張照片</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h4>推薦景點</h4>
+                        <ul>
+                            <li>京都 - 古都風情與櫻花美景</li>
+                            <li>東京 - 現代都市與傳統文化</li>
+                            <li>大阪 - 美食天堂</li>
+                            <li>富士山 - 神聖的象徵</li>
+                        </ul>
+                        <div class="destination-tags">
+                            <span class="tag">櫻花</span>
+                            <span class="tag">美食</span>
+                            <span class="tag">文化</span>
+                            <span class="tag">購物</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 法國 -->
+                <div class="destination-item" data-category="europe">
+                    <div class="destination-image">
+                        <img src="images/france-detail.jpg" alt="法國">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>法國</h3>
+                                <p>浪漫之都的藝術饗宴</p>
+                                <div class="destination-stats">
+                                    <span><i class="fas fa-file-alt"></i> 3 篇文章</span>
+                                    <span><i class="fas fa-camera"></i> 85 張照片</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h4>推薦景點</h4>
+                        <ul>
+                            <li>巴黎 - 艾菲爾鐵塔與羅浮宮</li>
+                            <li>普羅旺斯 - 薰衣草田野</li>
+                            <li>尼斯 - 蔚藍海岸</li>
+                            <li>凡爾賽 - 宮殿的奢華</li>
+                        </ul>
+                        <div class="destination-tags">
+                            <span class="tag">藝術</span>
+                            <span class="tag">美酒</span>
+                            <span class="tag">浪漫</span>
+                            <span class="tag">歷史</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 義大利 -->
+                <div class="destination-item" data-category="europe">
+                    <div class="destination-image">
+                        <img src="images/italy-detail.jpg" alt="義大利">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>義大利</h3>
+                                <p>歷史與美食的完美結合</p>
+                                <div class="destination-stats">
+                                    <span><i class="fas fa-file-alt"></i> 4 篇文章</span>
+                                    <span><i class="fas fa-camera"></i> 95 張照片</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h4>推薦景點</h4>
+                        <ul>
+                            <li>羅馬 - 永恆之城</li>
+                            <li>威尼斯 - 水上城市</li>
+                            <li>佛羅倫斯 - 文藝復興搖籃</li>
+                            <li>托斯卡納 - 田園風光</li>
+                        </ul>
+                        <div class="destination-tags">
+                            <span class="tag">歷史</span>
+                            <span class="tag">美食</span>
+                            <span class="tag">藝術</span>
+                            <span class="tag">建築</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 韓國 -->
+                <div class="destination-item" data-category="asia">
+                    <div class="destination-image">
+                        <img src="images/korea-detail.jpg" alt="韓國">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>韓國</h3>
+                                <p>K-Culture 與傳統美學</p>
+                                <div class="destination-stats">
+                                    <span><i class="fas fa-file-alt"></i> 2 篇文章</span>
+                                    <span class="fas fa-camera"></i> 60 張照片</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h4>推薦景點</h4>
+                        <ul>
+                            <li>首爾 - 現代與傳統並存</li>
+                            <li>釜山 - 海港城市風情</li>
+                            <li>濟州島 - 自然美景</li>
+                            <li>慶州 - 古都文化</li>
+                        </ul>
+                        <div class="destination-tags">
+                            <span class="tag">韓流</span>
+                            <span class="tag">美食</span>
+                            <span class="tag">購物</span>
+                            <span class="tag">溫泉</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 泰國 -->
+                <div class="destination-item" data-category="asia">
+                    <div class="destination-image">
+                        <img src="images/thailand-detail.jpg" alt="泰國">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>泰國</h3>
+                                <p>微笑國度的熱帶風情</p>
+                                <div class="destination-stats">
+                                    <span><i class="fas fa-file-alt"></i> 3 篇文章</span>
+                                    <span><i class="fas fa-camera"></i> 75 張照片</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h4>推薦景點</h4>
+                        <ul>
+                            <li>曼谷 - 繁華都市與古寺</li>
+                            <li>清邁 - 文化古城</li>
+                            <li>普吉島 - 海島度假</li>
+                            <li>大城 - 歷史遺跡</li>
+                        </ul>
+                        <div class="destination-tags">
+                            <span class="tag">海灘</span>
+                            <span class="tag">美食</span>
+                            <span class="tag">文化</span>
+                            <span class="tag">按摩</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 澳洲 -->
+                <div class="destination-item" data-category="oceania">
+                    <div class="destination-image">
+                        <img src="images/australia-detail.jpg" alt="澳洲">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>澳洲</h3>
+                                <p>野生動物與自然奇觀</p>
+                                <div class="destination-stats">
+                                    <span><i class="fas fa-file-alt"></i> 2 篇文章</span>
+                                    <span><i class="fas fa-camera"></i> 50 張照片</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h4>推薦景點</h4>
+                        <ul>
+                            <li>雪梨 - 歌劇院與港灣大橋</li>
+                            <li>墨爾本 - 咖啡文化之都</li>
+                            <li>大堡礁 - 海底世界</li>
+                            <li>烏魯魯 - 神聖巨石</li>
+                        </ul>
+                        <div class="destination-tags">
+                            <span class="tag">自然</span>
+                            <span class="tag">野生動物</span>
+                            <span class="tag">潛水</span>
+                            <span class="tag">探險</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>旅行日記</h3>
+                    <p>分享旅行的美好時光</p>
+                </div>
+                <div class="footer-section">
+                    <h3>網站導覽</h3>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="destinations.html">目的地</a></li>
+                        <li><a href="blog.html">旅遊日記</a></li>
+                        <li><a href="about.html">關於我</a></li>
+                        <li><a href="contact.html">聯絡</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>聯絡我們</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 旅行日記. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>

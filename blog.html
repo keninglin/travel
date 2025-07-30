@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅遊日記 - 旅行日記</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>旅行日記</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">首頁</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link">目的地</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">關於我</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link active">旅遊日記</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">聯絡</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 頁面標題 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>旅遊日記</h1>
+            <p>記錄每一次旅行的美好回憶</p>
+        </div>
+    </section>
+
+    <!-- 搜尋和篩選 -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="search-section">
+                <div class="search-box">
+                    <input type="text" placeholder="搜尋文章..." id="searchInput">
+                    <button type="button" onclick="searchArticles()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="filter-tags">
+                <button class="filter-tag active" data-tag="all">全部</button>
+                <button class="filter-tag" data-tag="日本">日本</button>
+                <button class="filter-tag" data-tag="歐洲">歐洲</button>
+                <button class="filter-tag" data-tag="親子">親子</button>
+                <button class="filter-tag" data-tag="美食">美食</button>
+                <button class="filter-tag" data-tag="文化">文化</button>
+                <button class="filter-tag" data-tag="攝影">攝影</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 部落格內容 -->
+    <main class="blog-content">
+        <div class="container">
+            <div class="blog-wrapper">
+                <!-- 文章列表 -->
+                <section class="articles-section">
+                    <div class="articles-grid">
+                        <!-- 文章 1 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="images/blog-kyoto-cherry.jpg" alt="京都櫻花季">
+                                <div class="article-date">
+                                    <span class="day">15</span>
+                                    <span class="month">四月</span>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h3><a href="article-detail.html">京都櫻花季：最美的粉色春天</a></h3>
+                                <div class="article-meta">
+                                    <span class="author"><i class="fas fa-user"></i> 旅行者小王</span>
+                                    <span class="reading-time"><i class="fas fa-clock"></i> 5 分鐘閱讀</span>
+                                </div>
+                                <p class="article-excerpt">
+                                    京都的櫻花季是一年中最美的時刻，漫步在哲學之道，欣賞滿樹的櫻花飄落，體驗日本獨有的浪漫春色。從清水寺到嵐山，每個角落都充滿了粉色的詩意...
+                                </p>
+                                <div class="article-tags">
+                                    <span class="tag">日本</span>
+                                    <span class="tag">櫻花</span>
+                                    <span class="tag">文化</span>
+                                    <span class="tag">攝影</span>
+                                </div>
+                                <div class="article-footer">
+                                    <div class="article-stats">
+                                        <span><i class="fas fa-eye"></i> 1,250</span>
+                                        <span><i class="fas fa-heart"></i> 89</span>
+                                        <span><i class="fas fa-comment"></i> 23</span>
+                                    </div>
+                                    <a href="article-detail.html" class="read-more">閱讀更多</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 文章 2 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="images/blog-paris-family.jpg" alt="巴黎親子遊">
+                                <div class="article-date">
+                                    <span class="day">28</span>
+                                    <span class="month">三月</span>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h3><a href="article-detail.html">巴黎親子遊：與孩子共度的浪漫時光</a></h3>
+                                <div class="article-meta">
+                                    <span class="author"><i class="fas fa-user"></i> 旅行者小王</span>
+                                    <span class="reading-time"><i class="fas fa-clock"></i> 7 分鐘閱讀</span>
+                                </div>
+                                <p class="article-excerpt">
+                                    帶著孩子遊巴黎並不是一件困難的事，從艾菲爾鐵塔到盧浮宮，每個角落都充滿了驚喜和學習的機會。這次分享我們一家四口在巴黎的美好時光...
+                                </p>
+                                <div class="article-tags">
+                                    <span class="tag">歐洲</span>
+                                    <span class="tag">親子</span>
+                                    <span class="tag">文化</span>
+                                </div>
+                                <div class="article-footer">
+                                    <div class="article-stats">
+                                        <span><i class="fas fa-eye"></i> 980</span>
+                                        <span><i class="fas fa-heart"></i> 67</span>
+                                        <span><i class="fas fa-comment"></i> 15</span>
+                                    </div>
+                                    <a href="article-detail.html" class="read-more">閱讀更多</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 文章 3 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="images/blog-tokyo-food.jpg" alt="東京美食">
+                                <div class="article-date">
+                                    <span class="day">10</span>
+                                    <span class="month">三月</span>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h3><a href="article-detail.html">東京美食之旅：從街頭小食到米其林</a></h3>
+                                <div class="article-meta">
+                                    <span class="author"><i class="fas fa-user"></i> 旅行者小王</span>
+                                    <span class="reading-time"><i class="fas fa-clock"></i> 6 分鐘閱讀</span>
+                                </div>
+                                <p class="article-excerpt">
+                                    東京的美食文化豐富多元，從築地市場的新鮮海鮮到銀座的精緻料理，每一口都是對味蕾的極致享受。跟著我的腳步探索東京的美食地圖...
+                                </p>
+                                <div class="article-tags">
+                                    <span class="tag">日本</span>
+                                    <span class="tag">美食</span>
+                                    <span class="tag">文化</span>
+                                </div>
+                                <div class="article-footer">
+                                    <div class="article-stats">
+                                        <span><i class="fas fa-eye"></i> 1,520</span>
+                                        <span><i class="fas fa-heart"></i> 124</span>
+                                        <span><i class="fas fa-comment"></i> 31</span>
+                                    </div>
+                                    <a href="article-detail.html" class="read-more">閱讀更多</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 文章 4 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="images/blog-italy-photography.jpg" alt="義大利攝影">
+                                <div class="article-date">
+                                    <span class="day">22</span>
+                                    <span class="month">二月</span>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h3><a href="article-detail.html">義大利攝影之旅：捕捉永恆的美麗</a></h3>
+                                <div class="article-meta">
+                                    <span class="author"><i class="fas fa-user"></i> 旅行者小王</span>
+                                    <span class="reading-time"><i class="fas fa-clock"></i> 8 分鐘閱讀</span>
+                                </div>
+                                <p class="article-excerpt">
+                                    義大利是攝影師的天堂，從羅馬的古蹟到托斯卡納的田園風光，每個畫面都值得永遠珍藏。分享我在義大利拍攝的心得和最愛的攝影地點...
+                                </p>
+                                <div class="article-tags">
+                                    <span class="tag">歐洲</span>
+                                    <span class="tag">攝影</span>
+                                    <span class="tag">文化</span>
+                                </div>
+                                <div class="article-footer">
+                                    <div class="article-stats">
+                                        <span><i class="fas fa-eye"></i> 850</span>
+                                        <span><i class="fas fa-heart"></i> 72</span>
+                                        <span class="fas fa-comment"></i> 18</span>
+                                    </div>
+                                    <a href="article-detail.html" class="read-more">閱讀更多</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 文章 5 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="images/blog-korea-seoul.jpg" alt="首爾探索">
+                                <div class="article-date">
+                                    <span class="day">05</span>
+                                    <span class="month">二月</span>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h3><a href="article-detail.html">首爾探索：傳統與現代的完美融合</a></h3>
+                                <div class="article-meta">
+                                    <span class="author"><i class="fas fa-user"></i> 旅行者小王</span>
+                                    <span class="reading-time"><i class="fas fa-clock"></i> 5 分鐘閱讀</span>
+                                </div>
+                                <p class="article-excerpt">
+                                    首爾是一個充滿活力的城市，古老的宮殿與摩天大樓並存，傳統的韓屋村與現代的江南區形成鮮明對比。體驗韓國獨特的文化魅力...
+                                </p>
+                                <div class="article-tags">
+                                    <span class="tag">韓國</span>
+                                    <span class="tag">文化</span>
+                                    <span class="tag">美食</span>
+                                </div>
+                                <div class="article-footer">
+                                    <div class="article-stats">
+                                        <span><i class="fas fa-eye"></i> 720</span>
+                                        <span><i class="fas fa-heart"></i> 56</span>
+                                        <span><i class="fas fa-comment"></i> 12</span>
+                                    </div>
+                                    <a href="article-detail.html" class="read-more">閱讀更多</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 文章 6 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="images/blog-thailand-family.jpg" alt="泰國親子遊">
+                                <div class="article-date">
+                                    <span class="day">18</span>
+                                    <span class="month">一月</span>
+                                </div>
+                            </div>
+                            <div class="article-content">
+                                <h3><a href="article-detail.html">泰國親子遊：熱帶天堂的家庭時光</a></h3>
+                                <div class="article-meta">
+                                    <span class="author"><i class="fas fa-user"></i> 旅行者小王</span>
+                                    <span class="reading-time"><i class="fas fa-clock"></i> 6 分鐘閱讀</span>
+                                </div>
+                                <p class="article-excerpt">
+                                    泰國是親子旅遊的絕佳選擇，溫暖的氣候、友善的人民、美味的食物，還有豐富的文化體驗。分享我們在泰國的美好親子時光...
+                                </p>
+                                <div class="article-tags">
+                                    <span class="tag">泰國</span>
+                                    <span class="tag">親子</span>
+                                    <span class="tag">海灘</span>
+                                </div>
+                                <div class="article-footer">
+                                    <div class="article-stats">
+                                        <span><i class="fas fa-eye"></i> 920</span>
+                                        <span><i class="fas fa-heart"></i> 78</span>
+                                        <span><i class="fas fa-comment"></i> 21</span>
+                                    </div>
+                                    <a href="article-detail.html" class="read-more">閱讀更多</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 分頁 -->
+                    <div class="pagination">
+                        <button class="page-btn prev" disabled><i class="fas fa-chevron-left"></i> 上一頁</button>
+                        <div class="page-numbers">
+                            <button class="page-num active">1</button>
+                            <button class="page-num">2</button>
+                            <button class="page-num">3</button>
+                            <span class="page-dots">...</span>
+                            <button class="page-num">8</button>
+                        </div>
+                        <button class="page-btn next">下一頁 <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </section>
+
+                <!-- 側邊欄 -->
+                <aside class="blog-sidebar">
+                    <div class="widget">
+                        <h3>關於作者</h3>
+                        <div class="author-info">
+                            <img src="images/author-avatar.jpg" alt="作者頭像">
+                            <div class="author-details">
+                                <h4>旅行者小王</h4>
+                                <p>熱愛旅行的攝影師，用鏡頭記錄世界的美好。</p>
+                                <div class="author-stats">
+                                    <span>文章: 25</span>
+                                    <span>粉絲: 1.2K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3>熱門文章</h3>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <img src="images/popular-blog-1.jpg" alt="熱門文章">
+                                <div class="popular-content">
+                                    <h4>京都櫻花季完整攻略</h4>
+                                    <span class="views">1,250 次觀看</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="images/popular-blog-2.jpg" alt="熱門文章">
+                                <div class="popular-content">
+                                    <h4>東京美食地圖分享</h4>
+                                    <span class="views">1,520 次觀看</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="images/popular-blog-3.jpg" alt="熱門文章">
+                                <div class="popular-content">
+                                    <h4>巴黎親子遊必去景點</h4>
+                                    <span class="views">980 次觀看</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3>最新留言</h3>
+                        <div class="recent-comments">
+                            <div class="comment">
+                                <div class="comment-author">小美</div>
+                                <div class="comment-text">"很實用的攻略，謝謝分享！"</div>
+                                <div class="comment-post">於《京都櫻花季》</div>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-author">旅行達人</div>
+                                <div class="comment-text">"照片拍得真美！"</div>
+                                <div class="comment-post">於《義大利攝影之旅》</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3>訂閱電子報</h3>
+                        <p>訂閱我們的電子報，獲取最新的旅遊資訊和攻略。</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="輸入您的電子郵件">
+                            <button type="submit">訂閱</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>旅行日記</h3>
+                    <p>分享旅行的美好時光</p>
+                </div>
+                <div class="footer-section">
+                    <h3>網站導覽</h3>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="destinations.html">目的地</a></li>
+                        <li><a href="blog.html">旅遊日記</a></li>
+                        <li><a href="about.html">關於我</a></li>
+                        <li><a href="contact.html">聯絡</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>聯絡我們</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 旅行日記. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
